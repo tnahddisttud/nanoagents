@@ -14,7 +14,7 @@ def call_llm(prompt: str) -> str:
         }
     ]
     response = client.chat.completions.create(
-        model="qwen-2.5-32b",
+        model="openai/gpt-oss-120b",
         messages=messages,
         temperature=0.9,
         max_tokens=2048
